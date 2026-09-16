@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fill the list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="topic-container">
+    <nav>
+      <a href="index.html" class="back-link">← Return to Home</a>
+    </nav>
+    <header>
+      <h1 id="topic-title">Loading...</h1>
+      <p id="topic-desc"></p>
+    </header>
+
+    <div class="input-section">
+      <input type="text" id="guess-input" placeholder="Write something..." autocomplete="off" />
+    </div>
+
+    <div class="progress">
+      <span id="counter">0</span> / <span id="total">0</span> found
+    </div>
+
+    <main>
+      <ul id="items-list" class="items-grid">
+      </ul>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
