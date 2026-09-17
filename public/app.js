@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (foundCount === itemsToGuess.length) {
               inputEl.placeholder = "Completato! Ottimo lavoro.";
               inputEl.disabled = true;
+              inputEl.classList.add("completed")
             }
           } else {
             inputEl.classList.add('wrong');
