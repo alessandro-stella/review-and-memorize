@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let foundCount = 0;
 
         const itemsToGuess = topic.items.map(item => ({
-          name: item,
+          names: Array.isArray(item) ? item : [item],
           guessed: false
         }));
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
           itemsToGuess.forEach(item => {
             const li = document.createElement('li');
             li.className = item.guessed ? 'guessed' : 'hidden-item';
-            li.textContent = item.guessed ? item.name : '???';
+            li.textContent = item.guessed ? item.names.join(' / ') : '???';
             listEl.appendChild(li);
           });
           counterEl.textContent = foundCount;
@@ -72,10 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
           let found = false;
 
           itemsToGuess.forEach(item => {
-            if (!item.guessed && item.name.toLowerCase() === guess) {
-              item.guessed = true;
-              foundCount++;
-              found = true;
+            if (!item.guessed) {
+              const match = item.names.some(name => name.toLowerCase() === guess);
+              if (match) {
+                item.guessed = true;
+                foundCount++;
+                found = true;
+              }
             }
           });
 
@@ -88,7 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
               inputEl.disabled = true;
             }
           } else {
-            inputEl.value = '';
+            inputEl.classList.add('wrong');
+
+            setTimeout(() => {
+              inputEl.classList.remove('wrong');
+            }, 750);
           }
         });
       })

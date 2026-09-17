@@ -157,6 +157,9 @@ main {
   text-align: center;
   border: 1px solid var(--border);
   font-size: 1rem;
+
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .items-grid li.hidden-item {
@@ -182,4 +185,27 @@ main {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+#guess-input.wrong {
+  border-color: #ff5252;
+  animation: shake 0.5s ease;
 }

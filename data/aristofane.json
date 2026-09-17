@@ -1,0 +1,23 @@
+{
+  "title": "Commedie di Aristofane",
+  "description": "Ti ricorderai tutte le commedie? Attenzione: sono accettati più nomi!",
+  "items": [
+    "Acarnesi",
+    "Cavalieri",
+    "Nuvole",
+    "Vespe",
+    "Pace",
+    "Uccelli",
+    "Lisistrata",
+    [
+      "Tesmoforiazuse",
+      "Donne alle Tesmoforie"
+    ],
+    "Rane",
+    [
+      "Ecclesiazuse",
+      "Donne all'assemblea"
+    ],
+    "Pluto"
+  ]
+}
