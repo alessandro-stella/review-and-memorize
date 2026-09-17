@@ -72,6 +72,12 @@ main {
   overflow-y: auto;
 }
 
+#home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
 .topic-card {
   display: block;
   background-color: var(--card-bg);
