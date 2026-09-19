@@ -1,0 +1,88 @@
+{
+  "title": "Le commedie di Plauto",
+  "description": "Ma le sai proprio tutte le 21 commedie di Plauto?",
+  "items": [
+    [
+      "Anfitrione",
+      "Amphitruo"
+    ],
+    [
+      "Asinaria"
+    ],
+    [
+      "Aulularia",
+      "La commedia della pentola"
+    ],
+    [
+      "Le Bacchidi",
+      "Bacchides"
+    ],
+    [
+      "I prigionieri",
+      "Captivi"
+    ],
+    [
+      "Casina"
+    ],
+    [
+      "Cistellaria",
+      "La commedia della cesta"
+    ],
+    [
+      "Curculio",
+      "Gorgoglione"
+    ],
+    [
+      "Epidico",
+      "Epidicus"
+    ],
+    [
+      "I Menecmi",
+      "Menaechmi"
+    ],
+    [
+      "Il mercante",
+      "Mercator"
+    ],
+    [
+      "Il soldato spaccone",
+      "Miles gloriosus"
+    ],
+    [
+      "La commedia del fantasma",
+      "Mostellaria"
+    ],
+    [
+      "Persiano",
+      "Persa"
+    ],
+    [
+      "Il cartaginese",
+      "Poenulus"
+    ],
+    [
+      "Pseudolo",
+      "Pseudolus"
+    ],
+    [
+      "La gomena",
+      "Rudens"
+    ],
+    [
+      "Stico",
+      "Stichus"
+    ],
+    [
+      "Le tre monete",
+      "Trinummus"
+    ],
+    [
+      "Truculento",
+      "Lo zoticone",
+      "Truculentus"
+    ],
+    [
+      "Vidularia"
+    ]
+  ]
+}
